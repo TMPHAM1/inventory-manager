@@ -5,6 +5,7 @@ import { setIsSidebarCollapsed } from '@/state'
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 
 interface SidebarLinkProps {
     href: string, 
@@ -48,7 +49,14 @@ const Sidebar = () => {
     return (
     <div className={sidebarClassNames}>
         <div className={`flex gap-3 justify-between md:justify-normal items-center pt-8 ${isSideBarCollapsed ? "px-5" : "px-8"}`}>
-        <div>logo</div>
+        <div className="w-9 h-9">
+                  <Image 
+                  alt="inventorylogo-image"
+                  width={27}
+                  height={27}
+                  className="rounded w-8"
+                  src="https://s3-inentory-management.s3.us-west-1.amazonaws.com/logo.png" />
+              </div>
             <h1 className={`font-extrabold text-2xl ${isSideBarCollapsed ? "hidden" : "block"}`}> {/* Hides Logo at larger sides and specific lengths */}
                 INVENTORY
             </h1>
