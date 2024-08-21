@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after {
+  box-sizing: border-box;
+}
+
+
+html,
+body,
+#root,
+.app{
+  height: 100%;
+  width: 100%;
+  @apply text-sm; /* This applies tail winds classes directly */
+  @apply bg-gray-500;
+  @apply text-gray-900
+}
+
+/* For Regular Screens */ 
+@media(min-width: 768px) {
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 20vh); /* This will set 8 rows but each row will be 20 viewport height */
+  }
+}
+
+/* FOR Lare Screens*/
+@media(min-width: 1280px) { 
+  .custom-grid-rows {
+    grid-template-rows: repeat(8, 7.5vh)
+  }
+}
