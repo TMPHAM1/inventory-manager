@@ -2,7 +2,7 @@
 import React from "react";
 import { useGetProductsQuery, useGetUsersQuery } from "@/state/api";
 import Header from "@/app/(components)/Header";
-import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import { DataGrid, GridColDef} from "@mui/x-data-grid";
 
 const columns: GridColDef[] = [
   { field: "userId", headerName: "ID", width: 90 },
@@ -30,8 +30,7 @@ const User = () => {
         rows={users}
         columns={columns}
         getRowId={(row) => row.userId}
-        checkboxSelection
-        className="bg-white shadow rounded-lg border border-gray-200 mt-5 !textgray-700"
+        className="bg-text-grey-700 shadow rounded-lg border border-gray-400 mt-5 !text-gray-700"
       />
     </div>
   );

@@ -105,7 +105,7 @@ const CardExpenseSummary = () => {
                         <p className="text-sm">
                             Average: {" "}
                             <span className="font-semibold">
-                                ${expenseSummary.totalExpenses.toFixed(2)}
+                                ${(expenseSummary.totalExpenses / 100000).toFixed(2)}m
                             </span>
         
                         </p>
