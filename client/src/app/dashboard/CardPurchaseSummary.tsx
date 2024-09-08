@@ -25,16 +25,17 @@ const CardPurchaseSummary = (props: Props) => {
           </div>
           {/* BODY */}
           <div>
-            <div className="mb-4 mt-7 px-7">
+            <div className="
+             mt-5 px-7">
               <p className="text-xs text-grey-400">Purchased</p>
               <div className="flex items-center">
                 <p className="text-2xl font-bold">
                   {lastDataPoint
                     ? numeral(lastDataPoint.totalPurchased).format("$0.00a")
                     : "0"}
+                    
                 </p>
-              </div>
-              {lastDataPoint && (
+                {lastDataPoint && (
                 <p
                   className={`text-sm ${
                     lastDataPoint.changePercentage! >= 0
@@ -49,6 +50,8 @@ const CardPurchaseSummary = (props: Props) => {
                     {Math.abs(lastDataPoint.changePercentage!)}
                 </p>
               )}
+              </div>
+           
             </div>
           </div>
           {/* CHART */}

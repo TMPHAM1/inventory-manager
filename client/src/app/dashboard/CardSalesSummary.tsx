@@ -113,7 +113,7 @@ const CardSalesSummary = (props: Props) => {
         {/* FOOTER */}
         <div>
             <hr />
-            <div className="flex justify-between items-center mt-6 text-sm px-7 mb-4">
+            <div className="flex justify-between items-center mt-5 text-sm px-7 mb-4">
                 <p>{saleData.length || 0} days</p>
                 <p className="text-sm">
                     Highest Sales Date: {" "}
