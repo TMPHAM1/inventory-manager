@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import DashboardWrapper from "./dashboardWrapper";
-
+import RegisterServiceWorkers from "./service-workers/RegisterServiceWorkers"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -17,10 +17,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>This is my first PWA</title>
+      <link rel="manifest" href="/manifest.json" />
       <body className={inter.className}>
         <DashboardWrapper> 
         {children}
+       
         </DashboardWrapper>
+        <RegisterServiceWorkers/>
         </body>
     </html>
   );
