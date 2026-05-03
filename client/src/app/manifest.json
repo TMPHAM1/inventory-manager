@@ -2,14 +2,16 @@
     "name": "GearTrace - Inventory Manager",
     "short_name": "GearTrace",
     "icons": [
-        {"src": "icons/gear-icon.webp",
-         "sizes": "144x144",
-         "type": "image/webp"    
-    }
+        {
+            "src": "/icons/gear-icon.webp",
+            "sizes": "144x144",
+            "type": "image/webp"
+        }
     ],
     "start_url": "/",
     "display": "standalone",
-    "id":"GearTraceMain",
-    "theme_color": "green",
-    "orientatin": "portrait"
+    "id": "GearTraceMain",
+    "theme_color": "#008000",
+    "background_color": "#ffffff",
+    "orientation": "portrait"
 }   
