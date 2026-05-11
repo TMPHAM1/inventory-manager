@@ -10,7 +10,6 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
 }
 
 model Users {
@@ -84,7 +83,7 @@ model ExpenseByCategory {
   expenseByCategoryId String @id
   expenseSummaryId String
   category String
-  amount BigInt
+  amount Float
   date DateTime
   expenseSummary ExpenseSummary @relation(fields: [expenseSummaryId], references: [expenseSummaryId])
 }
