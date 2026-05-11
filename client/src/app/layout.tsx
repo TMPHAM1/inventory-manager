@@ -17,8 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <title>This is my first PWA</title>
-      <link rel="manifest" href="/manifest.json" />
+      <head>
+        <title>GearTrace - Inventory Manager</title>
+        <link rel="manifest" href="/manifest.webmanifest" />
+      </head>
       <body className={inter.className}>
         <DashboardWrapper> 
         {children}
