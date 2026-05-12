@@ -5,11 +5,12 @@ import cors from "cors"
 import helmet from "helmet"
 import morgan from "morgan"
 
-// Route Imports 
+// Route Imports
 import dashboardRoutes from './routes/dashboardRoutes'
 import productRoutes from './routes/productRoutes'
 import userRoutes from "./routes/userRoutes"
 import expenseRoutes from "./routes/expenseRoutes"
+import uploadRoutes from "./routes/uploadRoutes"
 // Configurations
 dotenv.config();
 const app = express();
@@ -34,6 +35,7 @@ app.use("/dashboard", dashboardRoutes)
 app.use("/products", productRoutes);
 app.use("/users", userRoutes);
 app.use("/expenses", expenseRoutes);
+app.use("/upload", uploadRoutes);
 
 // Server
 const port = Number(process.env.PORT) || 3001;
