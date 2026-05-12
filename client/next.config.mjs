@@ -4,7 +4,13 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: "https",
-                hostname: "s3-inentory-management.s3.us-west-1.amazonaws.com",
+                hostname: "picsum.photos",
+                port: "",
+                pathname: "/**"
+            },
+            {
+                protocol: "https",
+                hostname: "res.cloudinary.com",
                 port: "",
                 pathname: "/**"
             }
