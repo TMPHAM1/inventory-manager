@@ -55,7 +55,7 @@ const Sidebar = () => {
                   width={27}
                   height={27}
                   className="rounded w-8"
-                  src="https://s3-inentory-management.s3.us-west-1.amazonaws.com/logo.png" />
+                  src="/logo.png" />
               </div>
             <h1 className={`font-extrabold text-2xl ${isSideBarCollapsed ? "hidden" : "block"}`}> {/* Hides Logo at larger sides and specific lengths */}
                 INVENTORY
