@@ -76,7 +76,7 @@ const Products = () => {
                   width={150}
                   height={150}
                   className="rmb-3 rounded-2xl w-36 h-36"
-                  src={`https://s3-inentory-management.s3.us-west-1.amazonaws.com/product${Math.floor(Math.random() * 3) + 1}.png`}
+                  src={`https://picsum.photos/seed/${product.productId}/150/150`}
                 />
                 <h3 className="text-lg text-gray-900 font-semibold">
                   {product.name}

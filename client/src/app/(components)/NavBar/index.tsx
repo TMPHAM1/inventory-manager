@@ -62,7 +62,7 @@ const NavBar = (props: Props) => {
                   width={50}
                   height={50}
                   className="rounded-full h-full object-cover"
-                  src="https://s3-inentory-management.s3.us-west-1.amazonaws.com/profile.jpg" />
+                  src="/profile.jpg" />
               </div>
               <span className="font-semibold">Tien Pham</span>
             </div>
